@@ -21,17 +21,21 @@ There is a bewildering variety of terms for various kinds of software tests and 
 
 #### Primary Taxonomy
 
+Different kinds of test are classified in a hierarchy or progression, where there are ones that are in some sense "lower level" that others. From lower to higher (vaguely):
+
 * [Unit Test, Component Test, Module Test](http://softwaretestingfundamentals.com/unit-testing/) - A test of a minimal part of a system that can be tested in isolation
-  * Solipsistic Unit Test - (My own terminology - is there not something already out there?) A test that does not depend on other components, like for a function that accepts, and produces low-level dumb data.
+  * Solipsistic Unit Test - (personal terminology) A test that does not depend on other components, like for a function that accepts, and produces low-level dumb data.
   * [Solitary Unit Test](https://medium.com/@jkone27_3876/arguments-around-solitary-versus-sociable-unit-testing-3b2211b15103) - A test where the one and only concrete service is the service under test (all other dependencies, except for data/value types are mocked)
   * [Sociable Unit Test, Component Test](https://medium.com/@jkone27_3876/arguments-around-solitary-versus-sociable-unit-testing-3b2211b15103) - A test which uses concrete service dependencies to test the class currently under test.
-* [System Test](http://softwaretestingfundamentals.com/system-testing/) -  A test that focuses on verifying that a system as a whole meets specified requirements
-* [Functional Test](http://softwaretestingfundamentals.com/functional-testing/) - A test of the system against the functional requirements/specifications.
-* [End-to-End (E2E) Test, Chain Test](https://www.guru99.com/end-to-end-testing.html) - A test that validates the software system along with its integration with external interfaces. The purpose of end-to-end Test is to exercise a complete production-like scenario. 
 * [Integration Test](http://softwaretestingfundamentals.com/integration-testing/) - A test where individual units are combined and tested as a group.
+* [Functional Test](http://softwaretestingfundamentals.com/functional-testing/) - A test of the system against the functional requirements/specifications. These requirements are the technical ones intended for engineering.
+* [System Test](http://softwaretestingfundamentals.com/system-testing/) -  A test that focuses on verifying that a system as a whole meets specified requirements. These requirements are the high-level ones meaningful to end users (e.g. user documentationsx)
+* [End-to-End (E2E) Test, Chain Test](https://www.guru99.com/end-to-end-testing.html) - A test that validates the software system along with its integration with external interfaces. The purpose of end-to-end Test is to exercise a complete production-like scenario.
 * [Acceptance Test](http://softwaretestingfundamentals.com/acceptance-testing/ )-  A test of a system for acceptability. The purpose of this test is to evaluate the system’s compliance with the business requirements and assess whether it is acceptable for delivery.
 
 #### Secondary Taxonomies
+
+Various other terminology, variously applied:
 
 * [User Interface Test, UI Test](https://martinfowler.com/articles/practical-test-pyramid.html). A test which starts at the User Interface level. Can be an E2E test, but could also mock services.
 * [Service Test](https://www.mountaingoatsoftware.com/blog/the-forgotten-layer-of-the-test-automation-pyramid) - A hard to understand kind of test that is higher-level than a unit test, lower level than a UI test.
