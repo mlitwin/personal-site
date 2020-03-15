@@ -14,7 +14,7 @@ role: Software Engineer
 
 # Organizations/Affiliations
 organizations:
-- name: MgGraw-Hill Education
+- name: McGraw-Hill Education
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
